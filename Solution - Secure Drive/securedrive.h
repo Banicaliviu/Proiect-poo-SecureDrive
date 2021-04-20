@@ -2,11 +2,16 @@
 #define SECUREDRIVE_H
 
 #include <QMainWindow>
+#include<QtSql>
+#include<QSqlDatabase>
 #include "login.h"
 #include "register.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class SecureDrive; }
 QT_END_NAMESPACE
+
+class QSqlQueryModel;
 
 class SecureDrive : public QMainWindow
 {
@@ -17,9 +22,13 @@ public:
     ~SecureDrive();
 
 private slots:
-    void on_pushButton_2_clicked();
+    void on_pushButton_log_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_pushButton_reg_clicked();
+
+    void on_toolButton_iesire_clicked();
+
+    void on_toolButton_min_clicked();
 
 private:
     Ui::SecureDrive *ui;

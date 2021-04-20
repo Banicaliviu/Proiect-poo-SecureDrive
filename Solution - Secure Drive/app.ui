@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>620</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="palette">
@@ -95,7 +95,31 @@
     <string>Fereastra Aplicatie</string>
    </property>
   </widget>
+  <widget class="QCommandLinkButton" name="commandLinkButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>168</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/img/img/restore-window-16.png</normaloff>:/img/img/restore-window-16.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
